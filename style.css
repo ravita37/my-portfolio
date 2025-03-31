@@ -1,0 +1,1058 @@
+
+.section{
+  height: 100vh;
+  width: 100vw;
+  z-index: 50;
+}
+
+
+.nameclass{
+  font-size: clamp(90px, 20vw, 200px);
+  font-family:serif;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px white;
+  text-align: center;
+  
+}
+
+.ofor-z{
+  min-height: 50vh;
+  margin-top: 50px;
+}
+.proj-conut{
+  max-height:50% ;
+}
+.box-class{
+  z-index:50;
+  position:relative;
+  margin-top: 50px;
+}
+.sec-aboutme{
+  height: 100%;
+  display: flex;
+  z-index: -1;
+  align-items: center;
+}
+
+.sec-skil{
+  height: 100%;
+}
+
+
+.short-discrpclass{
+  font-size: clamp(25px, 5vw, 50px);
+  margin-top: -20px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+}
+
+.about-me{
+  display: flex;
+  align-items: center;
+  min-height: 50vh; 
+  margin-bottom: 60px;
+  z-index: 50;
+}
+.about-me-head{
+  font-size: clamp(50px, 10vw, 90px); 
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  animation: colorChange 6s linear infinite;
+}
+.about-me-info{
+  font-size: clamp(20px, 2vw, 30px); 
+  text-align: center;
+}
+.skills{
+  z-index: 50;
+}
+
+.new-logo{
+  height: 50px;
+  width: 50px;
+  font-weight: bolder;
+}
+
+.last1{
+  display: flex;
+  justify-content: center;
+  font-size: clamp(20px, 2vw, 40px); 
+}
+
+.last3 {
+ color: rgb(230, 108, 179);
+  font-size: clamp(14px, 3vw, 24px); /* Responsive font size */
+  text-align: center; /* Center text */
+  padding: 10px; /* Add padding to avoid cutting off text */
+  word-wrap: break-word; /* Allow long words to wrap */
+  white-space: normal; /* Prevent text from sticking in one line */
+  max-width: 100%; /* Prevent overflow */
+}
+
+.skil-col-1{
+  margin-bottom: -50px;
+}
+
+.end{
+  background-color: #363434;
+  opacity: 0.9;
+  margin-top: 5%;
+}
+
+.hori-line{
+  height: 3px; 
+  background-color: rgb(119, 112, 100);
+   border: none;
+}
+
+/* Keyframes for color-changing animation */
+@keyframes colorChange {
+  0%   { color: #ff5733; }  /* Red */
+  25%  { color: #33ff57; }  /* Green */
+  50%  { color: #3357ff; }  /* Blue */
+  75%  { color: #ff33a6; }  /* Pink */
+  100% { color: #ff5733; }  /* Back to Red */
+}
+.skillclass{
+  font-size: clamp(50px, 10vw, 90px); 
+}
+.skill-con{
+  display: flex;
+  
+  flex-direction: column;
+}
+
+.proj-head{
+  font-size: clamp(50px, 10vw, 90px); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+}
+@media (max-width: 1000px) {
+  .proj-box .col-4 {
+      min-width: 300px; /* Adjust based on your design */
+      flex: 0 0 auto; /* Prevent flex shrinking */
+  }
+}
+
+.proj-box{
+  display: flex;
+  justify-content: center;
+  z-index: 50;
+  gap: 20px;
+}
+
+.projects-section {
+ 
+  background-size: cover; /* Ensures the image covers the entire section */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat; /* Prevents repeating */
+  color: white; /* Ensures text is visible */
+  padding: 50px 0; /* Adds spacing inside the section */
+}
+
+.proj-1,.proj-2,.proj-3,.proj-4 {
+  height: 250px; /* Set height */
+  border: 2px solid white; /* Keep border visible */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: white; /* Make text readable */
+  text-align: center;
+  overflow: hidden; /* Prevents any unwanted overflow */
+}
+
+/* Pseudo-element for background transparency */
+.proj-1::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url('new-tick.PNG') no-repeat center center;
+  background-size: cover;
+  background-color: rgba(226, 0,0, 1); /* Adds transparency effect */
+  opacity: 0.3; /* Adjust transparency */
+  z-index: -1; /* Push behind text and border */
+}
+
+/* Ensures text is fully visible */
+.proj-1 span {
+  position: relative;
+  z-index: 1; /* Keeps text above the background */
+}
+/* Pseudo-element for background transparency */
+.proj-2::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url('cgpa-sgpa.PNG') no-repeat center center;
+  background-size: cover;
+  background-color: rgba(226, 0,0, 1); /* Adds transparency effect */
+  opacity: 0.3; /* Adjust transparency */
+  z-index: -1; /* Push behind text and border */
+}
+
+/* Ensures text is fully visible */
+.proj-2 span {
+  position: relative;
+  z-index: 1; /* Keeps text above the background */
+}
+
+.proj-3::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url('currency.PNG') no-repeat center center;
+  background-size: cover;
+  background-color: rgba(226, 0,0, 1); /* Adds transparency effect */
+  opacity: 0.2; /* Adjust transparency */
+  z-index: -1; /* Push behind text and border */
+}
+
+/* Ensures text is fully visible */
+.proj-3 span {
+  position: relative;
+  z-index: 1; /* Keeps text above the background */
+}
+
+.proj-4::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url('stone.PNG') no-repeat center center;
+  background-size: cover;
+  background-color: rgba(226, 0,0, 1); /* Adds transparency effect */
+  opacity: 0.2; /* Adjust transparency */
+  z-index: -1; /* Push behind text and border */
+}
+/* Ensures text is fully visible */
+.proj-4 span {
+  position: relative;
+  z-index: 1; /* Keeps text above the background */
+}
+.skil-col-1{
+  height: 75%;
+}
+.skil-col-2{
+  height: 25%;
+}
+
+
+.DSA{
+  margin-top: 50px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.number{
+  color: #6e61dd;
+  font-size: clamp(40px, 10vw, 50px); 
+  font-weight: bold;
+  text-align: center;
+}
+.skillsbox{
+  text-align: center; 
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+}
+.dsa-num{
+  text-align: center;
+ 
+  font-size: clamp(15px, 5vw, 20px); 
+}
+
+h2 span
+{
+animation: animate 2.8s linear infinite;
+}
+h2 span:nth-child(1)
+{
+    animation-delay: 0s;
+}
+h2 span:nth-child(2)
+{
+    animation-delay: 0.4s;
+}
+h2 span:nth-child(3)
+{
+    animation-delay: 0.8s;
+}
+h2 span:nth-child(4)
+{
+    animation-delay: 1.2s;
+}
+h2 span:nth-child(5)
+{
+    animation-delay: 1.6s;
+}
+h2 span:nth-child(6)
+{
+    animation-delay: 2s;
+}
+h2 span:nth-child(7)
+{
+    animation-delay: 2.4s;
+}
+@keyframes animate
+{
+    0%,80%
+    {
+        color: #333;
+        text-shadow: none;
+    }
+    100%
+    {
+        color: #fff;
+        text-shadow:0 0 10px #fff,
+                    0 0 20px #fff,
+                    0 0 40px #fff,
+                    0 0 80px #fff,
+                    0 0 120px #fff,
+                    0 0 160px #fff;
+    }
+
+
+}
+.diff-skills{
+  height: 70%;
+}
+.eachskill{
+  display: block; 
+  
+}
+.aboutskillclass{
+  font-size: clamp(20px, 3vw, 30px); 
+}
+.flex-display {
+  display: flex;
+  
+  align-items: center;
+}
+.no-margin-container {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .b{
+   background-color: #111111;
+   transition: filter 0.3s ease-in-out;
+  }
+  .no-pointer-events {
+  
+    pointer-events: none;
+}
+html, body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+
+.topmargin{
+  margin-top: 100px;
+}
+@media (max-width: 467px) { 
+  .topmargin{
+      margin-top: 100px;
+  }
+}
+
+
+.yelloww{
+  border: 2px solid yellow;
+}
+
+.imagee{
+   
+   
+    height: 150px;
+    width: 150px;
+    margin-top: -70px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+   
+  }
+  .first {
+    padding: 0; /* Adjust if needed */
+    margin: 0 auto;
+}
+  .oimagebox{
+    height: 150px;
+    width: 150px;
+    padding:-100px;
+  }
+.n{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .icons1{
+    display: flex;
+   justify-content:space-between;
+
+  }
+.apps{
+   height: 30px;
+   width: 30px;
+   margin-top: 30px;
+  }
+  .apps2{
+    height: 40px;
+   width: 40px;
+   margin-top: 30px;
+   margin-left: -10px;
+  }
+ 
+ .name{
+  margin-left:20px;
+  margin-top: 0px;
+  font-size: 100px;
+  
+  
+ }
+
+ .btn-primary{
+  margin-left: 30px;
+  border: none;
+  border-radius: 7%;
+  font-size: 20px;
+  font-weight: 700;
+
+  background: linear-gradient(to right,rgb(1, 1, 97),rgb(47, 117, 248));
+ }
+.opacity{
+  opacity: 50%;
+  margin-top: -50px;
+
+}
+
+.nowrap-text {
+  white-space: nowrap;
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 567px) { /* When screen is smaller than md (768px) */
+  .nowrap-text{
+      margin-left: 73px;
+  }
+}
+.custom-text {
+        font-size: 100px; /* Default size */
+        margin-top: -20px;
+        pointer-events: none;
+        display: flex;
+        justify-content: center;
+    }
+.role{
+        display: flex;
+        justify-content: center;
+}
+.resume-btn{
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+.btnbox{
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 567px) { /* When screen is smaller than md (768px) */
+        .custom-text {
+            font-size: 80px; /* Reduce font size */
+            margin-left: 50px;
+            margin-top: -50px;
+        }
+    }
+    
+.responsive-btn {
+      font-size: clamp(12px, 2vw, 20px); /* Min 12px, Max 20px, Adjusts with screen */
+      padding: 10px 20px;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      display: flex;
+      justify-content: center;
+}
+.responsive-btn:hover {
+  transform: scale(1.1); /* Increases size by 20% */
+   /* Optional: Change color on hover */
+  
+}
+    
+
+.sideicons{
+  margin-right: 15px;
+  margin-top: -15px;
+}
+.app{
+  margin-top: 0px;
+}
+.arr{
+  display: flex;
+}
+.aroimg{
+  width: 90px;
+  height: 20px;
+ margin-left: -12%;
+}
+.aroimg2{
+  width: 20px;
+  height: 90px;
+  margin-left: 90px;
+  margin-top: -20px;
+}
+@media (max-width: 777px) { /* When screen is smaller than md (768px) */
+  .aroimg2 {
+      margin-left: 85px;
+  }
+}
+@media (max-width: 560px) { /* When screen is smaller than md (768px) */
+  .aroimg2 {
+    margin-left: clamp(60px, 5vw, 70px); 
+    margin-top: -30px;
+  }
+}
+.size{
+  font-size: 30px;
+  text-decoration: underline;
+}
+@media (max-width: 500px) { /* When screen is smaller than md (768px) */
+  .size {
+      font-size: 20px;
+  }
+}
+.arr2{
+  display: flex;
+  flex-direction: column;
+  margin-top: -180px;
+}
+.btn-secondary{
+  
+  border: none;
+  border-radius: 7%;
+  font-size: 20px;
+  font-weight: 700;
+
+  background: linear-gradient(to right,rgb(1, 1, 97),rgb(47, 117, 248));
+ }
+ .display{
+  display: flex;
+}
+  
+ 
+ .absolute{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+ }
+
+
+
+ .card{
+  border:2px solid white;
+  border: none;
+  outline: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: none;
+  
+ }
+ .card-body{
+  text-align: center;
+ 
+ }
+ .card-body h1{
+  color: #111111;
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+ }
+
+ .proj-img{
+  width: 250px;
+  height: 250px;
+  background-color: lightgrey;
+  display: inline-block;
+  border-radius: 10%;
+ }
+
+.col-lg-4 {
+  animation-duration: 2s;
+  animation-name: motion;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes motion {
+  0% {
+      opacity: 0.4;
+      scale:0.7;
+      border: none;
+      transform: translateX(-50px);
+  }
+  100% {
+      opacity: 1;
+      scale:0.7;
+      border:none;
+      transform: translateX(0);
+  }
+}
+.card-body-look{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.btnpro{
+  height: 40px;
+  width: 150px;
+  margin: auto;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.btnpro:hover {
+  transform: scale(1.1); /* Increases size by 20% */
+   /* Optional: Change color on hover */
+  color: #fff;
+}
+
+
+.proj-img{
+  margin: auto;
+}
+
+
+.form-container{
+  text-align: center;
+}
+.contact-info {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.contact-info h2 {
+  color: white;
+}
+
+.contact-info p {
+  margin: 5px 0;
+  color:white;
+}
+
+.contact-form h2 {
+  margin-bottom: 15px;
+  color:white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin: 10px 0 5px;
+  color: white;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.sumbtn{
+  margin-top: 20px;
+  padding: 10px;
+  background: linear-gradient(to right,rgb(1, 1, 97),rgb(47, 117, 248));
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.sumbtn:hover {
+  opacity: 90%;
+}
+.footer-container{
+  display: flex;
+}
+
+
+.a{
+  margin-top: -30px;
+  margin-left: -100px;
+}
+.line{
+  width: 400px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0;
+  margin-top: 50px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+.footer-about,
+.footer-links,
+.footer-social {
+  flex: 1;
+  min-width: 200px;
+  margin: 20px 0;
+}
+
+ 
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #444;
+  margin-top: 20px;
+  background-color: #333;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+  color: #ccc;
+}
+.FOLO{
+  display: flex;
+}
+
+
+/* Popup Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-content {
+  background: white;
+  width: 50%;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  position: relative;
+}
+#closeBtn {
+  position: absolute;
+  top: 10px; right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  
+}
+
+/* Blur Effect */
+.blur {
+  filter: blur(5px);
+}
+
+.last{
+  margin: 0;  /* Ensure no extra margin */
+  display: flex;
+  flex-wrap: wrap;
+}
+.last2{
+  padding: 0;  
+}
+
+.mybtn{
+  border: #444;
+  border-radius: 10%;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  margin: 6px;
+}
+.mybtn:hover {
+  transform: scale(1.2); /* Increases size by 20% */
+  background-color:#1900ff; /* Optional: Change color on hover */
+  color: #fff;
+}
+
+
+
+
+
+.col-6 {
+  padding: 0; /* Removes unwanted padding */
+}
+
+.code1{
+  text-decoration: underline;
+  background-color: #111111;
+  color: white;
+  border: none;
+  font-size: 25px;
+}
+
+.card-info, .card-look {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers content */
+  align-items: center;
+  padding-left: 10px;
+}
+.proj-img img {
+  width: 100%; /* Makes image responsive */
+  height: auto;
+}
+ .line{
+  margin-top: 120px;
+  font-size: 25px;  
+ }
+ .animated-text2 {
+  font-family: 'Times New Roman', serif;
+  font-size: clamp(30px, 5vw, 50px);
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.5);
+  color: white;
+  display: flex;
+  align-items: center; /* Centers children vertically */
+  justify-content: center;
+  height: 100%;
+}
+.parent-contact2{
+  height: 100%;
+}
+
+.parent-contact{
+  display: flex;
+  align-items: center; /* Centers children vertically */
+  justify-content: center;
+}
+ .animated-text {
+  font-size: 20px;
+  font-weight: bold;
+  overflow: hidden;
+  display: block; /* ✅ Ensures text wraps */
+  max-width: 80%; /* ✅ Restricts width for better readability */
+  margin: auto; /* Centers the text */
+  white-space: normal; 
+}
+@media (max-width: 770px) {
+  .animated-text{
+      display: none;
+  }}
+
+.submit-btn{
+  width: 50%;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bolder;
+  
+
+}
+.submit-btn-box{
+  margin-top: 5%;
+  text-align: center;
+}
+.contact-me{
+  display: flex;
+  justify-content: center;
+  font-size: 80px;
+  font-size: clamp(50px, 5vw, 90px);
+}
+.submit-btn.btn-outline-primary:hover {
+  background-color: #eaacec !important;
+  border-color: #eaacec !important;
+  color: #000 !important; /* Adjust text color for contrast */
+}
+.submit-btn.btn-outline-primary {
+  color: #e66cb3 !important; /* Dark pink text */
+  border-color: #e66cb3 !important; /* Dark pink border */
+}
+.form-size{
+  font-size: 20px;
+  height: 90%;
+  
+}
+#message{
+  height: 70px;
+}
+
+
+.imagebox {
+  display: flex;
+  justify-content: center;
+}
+.down{
+  width: 100%;
+  margin: 0px;
+}
+.custom-hr {
+  border: none;
+  height: 2px;
+  background:rgb(87, 56, 56);
+  margin: 20px 0;
+}
+.last{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.imagee2{
+  margin-top:-35px;
+  margin-left: -60px;
+  height: 200px;
+  width: 200px;
+}
+
+#text2{
+  font-family: 'Times New Roman', serif;
+}
+
+
+.letter {
+  display: inline-block;
+  animation: wave 1.5s infinite ease-in-out;
+}
+@keyframes wave {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px);
+  }
+}
+
+.col-md-12 {
+  width: 100% !important;
+}
+
+.homebar {
+  margin: 0px;
+  display: flex;  
+  justify-content: center; /* Spaces links evenly */
+  color:white;
+  cursor: pointer;
+  pointer-events: auto; 
+  
+  z-index: 500;
+  position:fixed;
+  
+ /* Fixes navbar at the top */
+  top: 10px;
+  left: 0; /* Aligns to the left of the page */
+  width: 105%; /* Adjust as per your design */
+}
+
+.homecontainer{
+  color: #fff;
+  display: flex;  
+  justify-content: space-around; /* Spaces links evenly */
+  align-items: center;
+  border-radius: 15px 15px 15px 15px;
+    height:70px;
+    
+    background-color: #eaacec;
+     
+}
+.home:hover{
+  text-decoration: none;
+  font-size: 1.3em;
+}
+
+.home {
+  
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(56, 44, 44);
+  font-size: clamp(15px, 2vw, 20px);
+  transition: all 0.3s ease-in-out;
+}
+.home:active {
+  color: rgb(47, 48, 148);  /* Changes color when clicked */
+}
+.red{
+  border:2px solid red;
+}
+.faltu{
+  height: 15vh;
+}
+.faltu1{
+  height: 90vh;
+}
+.faltu2{
+  height: 15vh;
+}
+.center{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a:hover .apps {
+  color: rgb(110, 101, 101); /* Changes to red when hovered */
+  height: 35px;
+  width: 35px;
+}
+
+a:hover .apps2 {
+  color: rgb(110, 101, 101); /* Changes to red when hovered */
+  height: 45px;
+  width: 45px;
+
+}
+.canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -100; /* Keeps it in the background */
+}
+
+#wrapper-canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -5000;
+}

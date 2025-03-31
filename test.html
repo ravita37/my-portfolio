@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Responsive Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        /* Fixed Navigation Bar */
+        body{
+            background-color: black;
+        }
+        .homebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: red;
+            z-index: 1000;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .homebar .home {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .homebar .home:hover {
+            text-decoration: underline;
+        }
+        .section {
+            padding: 80px 20px;
+        }
+        .about-me-info {
+            text-align: justify;
+        }
+        .apps, .apps2 {
+            width: 30px;
+            height: 30px;
+            margin: 5px;
+        }
+        .box-class {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<section class="section red">
+    <div class="container-fluid">
+        <div class="row homebar">
+            <div class="col-12">
+                <a href="#Home" class="home">Home</a>
+                <a href="#aboutme" class="home">About me</a>
+                <a href="#skills" class="home">Skills</a>
+                <a href="#projects" class="home">Projects</a>
+                <a href="#contacts" class="home">Contact</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section yelloww" id="Home">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-9 box-class">
+                <h1 class="nameclass">Ravita</h1>
+                <p class="short-discrpclass">
+                    <span>Engineering Student,</span>
+                    <span>Web Developer,</span>
+                    <span>Problem Solver</span>
+                </p>
+            </div>
+            <div class="col-md-3 text-center">
+                <a href="https://www.linkedin.com" class="text-light" target="_blank">
+                    <svg class="apps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path fill="currentColor" d="M100.3 448H7.4V148.9h92.9z" />
+                    </svg>
+                </a>
+                <a href="https://github.com/ravita37" class="text-light" target="_blank">
+                    <svg class="apps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                        <path fill="currentColor" d="M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section yelloww" id="aboutme">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-5 about-me-head"><h2>About Me</h2></div>
+            <div class="col-md-7 about-me-info">
+                I am a 3rd-year Electronics and Communication Engineering student at NIT Surat, skilled in frontend development with HTML, CSS, JavaScript, and Bootstrap. I also have expertise in C, C++, Python, and a strong foundation in Data Structures and Algorithms.
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
